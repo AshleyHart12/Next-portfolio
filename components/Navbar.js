@@ -5,13 +5,12 @@ export default function Navbar() {
         <>
         <nav className="navbar">
             <div className="container-fluid navbarStyle d-flex">
-                <Link href='/'>Home</Link>
-                <Link href='/about'>About</Link>
-                <Link href='/projects'>Projects</Link>
-                <Link href='/contact'>Contact</Link>
+                <div className="button type2"><Link href='/'>Home</Link></div>
+                <div className="button type2"><Link href='/about'>About</Link></div>
+                <div className="button type2"><Link href='/projects'>Projects</Link></div>
+                <div className="button type2"><Link href='/contact'>Contact</Link></div>
             </div>
-        </nav>
-            
+        </nav>       
         </>
     )
 }

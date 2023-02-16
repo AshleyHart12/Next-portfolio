@@ -38,7 +38,7 @@ function Contact() {
                 placeholder='NAME'
                 value={toSend.from_name}
                 onChange={handleChange}
-                class="m-3"
+                className="m-3"
             />
              <input
                 type='text'
@@ -46,7 +46,7 @@ function Contact() {
                 placeholder='YOUR EMAIL'
                 value={toSend.reply_to}
                 onChange={handleChange}
-                class="m-3"
+                className="m-3"
             />
             <input
                 type='text'
@@ -54,7 +54,7 @@ function Contact() {
                 placeholder='MESSAGE'
                 value={toSend.message}
                 onChange={handleChange}
-                class="m-3"
+                className="m-3"
             />
             <a href="#" class="cta">
               <span>Submit</span>
