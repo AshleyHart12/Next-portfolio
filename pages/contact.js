@@ -56,7 +56,14 @@ function Contact() {
                 onChange={handleChange}
                 class="m-3"
             />
-            <button type='submit' id="contactBtn" class="m-3">Submit</button>
+            <a href="#" class="cta">
+              <span>Submit</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
+            {/* <button type='submit' id="contactBtn" class="m-3">Submit</button> */}
         </form>
       </div>
     );

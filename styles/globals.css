@@ -1,10 +1,15 @@
+:root {
+  --primary-dark: rgb(82, 38, 98);
+  --primary-light: rgb(254, 250, 255)
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Itim', cursive;
   font-size: 16px;
-  background-color: rgb(254, 250, 255);
+  background-color: var(--primary-light);
   text-align: center;
   height: 100%;
 }
@@ -17,7 +22,7 @@ body {
   text-decoration: none;
   color: white;
   padding: 10px;
-  color: rgb(82, 38, 98);
+  color: var(--primary-dark);
   font-weight: 700;
 }
 
@@ -35,7 +40,7 @@ body {
 }
 
 .dark-text {
-  color: rgb(82, 38, 98);
+  color: var(--primary-dark);
 }
 
 .large-text {
@@ -52,7 +57,7 @@ body {
 }
 
 #modalBtn {
-  background-color: rgb(82, 38, 98);
+  background-color: var(--primary-dark);
   color: white;
   border-radius: 50%;
 }
@@ -80,7 +85,7 @@ input {
   border-bottom: 1px solid black;
 }
 
-#contactBtn {
+/* #contactBtn {
   max-width: 200px;
   min-width: 150px;
   align-self: center;
@@ -88,7 +93,8 @@ input {
   background-color: #522662;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
+} */
+
 
 .contactForm {
   max-width: 400px;
@@ -100,4 +106,67 @@ input {
 
 .contactForm:nth-child(3) input {
   height: 200px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.cta{
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all .2s ease;
+}
+
+.cta:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: var(--primary-light);
+  width: 56px;
+  height: 56px;
+  transition: all .3s ease;
+}
+.cta span{
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  vertical-align: middle
+}
+.cta span:hover {
+  color: var(--primary-light)
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all .5s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: var(--primary-dark);
+  color: var(--primary-light)
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+  stroke: var(--primary-light)
+}
+
+.cta:active {
+  transform: scale(.76);
 }
