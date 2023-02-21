@@ -30,7 +30,7 @@ function Contact() {
     };
   
     return (
-      <div className='container'>
+      <div className='container mt-5'>
         <form onSubmit={onSubmit} class=" d-flex flex-column contactForm">
             <input
                 type='text'
@@ -43,7 +43,7 @@ function Contact() {
              <input
                 type='text'
                 name='reply_to'
-                placeholder='YOUR EMAIL'
+                placeholder='EMAIL'
                 value={toSend.reply_to}
                 onChange={handleChange}
                 className="m-3"
