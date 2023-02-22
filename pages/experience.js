@@ -16,7 +16,7 @@ return (
 <VerticalTimeline id="experiencesDiv">
 <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(82, 38, 98)' }}
     date="08/2022 - present"
     iconStyle={{ background: 'rgb(82, 38, 98)', color: '#fff' }}
     icon={<img src={computer} alt='computer' />}
@@ -31,6 +31,7 @@ return (
   
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
+    contentArrowStyle={{ borderRight: '7px solid  rgb(82, 38, 98)' }}
     date="08/2021 - present"
     iconStyle={{ background: 'rgb(82, 38, 98)', color: '#fff' }}
     icon=''
@@ -43,6 +44,7 @@ return (
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
+    contentArrowStyle={{ borderRight: '7px solid  rgb(82, 38, 98)' }}
     date="08/2021 - 05/2022"
     iconStyle={{ background: 'rgb(82, 38, 98)', color: '#fff' }}
     icon='/images/Vantage.png'
@@ -57,6 +59,7 @@ return (
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
+    contentArrowStyle={{ borderRight: '7px solid  rgb(82, 38, 98)' }}
     date="12/2020 - 04/2021"
     iconStyle={{ background: 'rgb(82, 38, 98)', color: '#fff' }}
     icon='/images/Vantage.png'
@@ -69,6 +72,7 @@ return (
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
+    contentArrowStyle={{ borderRight: '7px solid  rgb(82, 38, 98)' }}
     date="08/2019 - 12/2020"
     iconStyle={{ background: 'rgb(82, 38, 98)', color: '#fff' }}
     icon='/images/Vantage.png'
