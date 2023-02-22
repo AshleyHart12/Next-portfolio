@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import Linkedin from '../public/images/linkedin.svg';
+
 
 
 export default function Home() {
