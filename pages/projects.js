@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Lampros from "../public/images/lampros.gif";
 import Vantage from "../public/images/Vantage.png";
+import Localeyz from "../public/images/localeyz.gif"
 
 export default function About() {
     return (
@@ -12,7 +13,9 @@ export default function About() {
         <div className="container project-container">
             <div className="row mt-4">
                 <div className="col">
-                    <Image src={Lampros} width={300} height={200} alt="gif going through website" />
+                    <div className="project-img img-lampros">
+                        <Image src={Lampros} width={300} height={200} alt="gif going through website" />
+                    </div>
                 </div>
                 <div className="col">
                     <p>Lampros Labs</p>
@@ -25,7 +28,9 @@ export default function About() {
 
             <div className="row mt-4">
                 <div className="col">
-                    <Image src={Vantage} width={300} height={200} alt="gif going through website" />
+                    <div className="project-img img-vantage">
+                        <Image src={Vantage} width={300} height={200} alt="gif going through website" />
+                    </div>
                 </div>
                 <div className="col">
                     <p>Vantage Ltd.</p>
@@ -36,6 +41,22 @@ export default function About() {
                 </div>
             </div>
 
+            <div className="row mt-4">
+                <div className="col">
+                    <div className="project-img img-localeyz">
+                        <Image src={Localeyz} width={300} height={200} alt="gif going through website" />
+                    </div>
+                </div>
+                <div className="col">
+                    <p>Localeyz.io</p>
+                    <p>REACT | GRAPHQL | GATSBY | JSON</p>
+                    <button class="btn btn-primary project-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#localeyz" aria-controls="localeyz">
+                        View More
+                    </button>
+                </div>
+            </div>
+
+            {/* MODALS */}
             <div class="offcanvas offcanvas-start" tabindex="-1" id="lampros" aria-labelledby="LamprosLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="LamprosLabel">Offcanvas</h5>
