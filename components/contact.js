@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { send } from 'emailjs-com';
 import Image from 'next/image'
+import Head from 'next/head';
 
 function Contact() {
     const [toSend, setToSend] = useState({
@@ -32,6 +33,9 @@ function Contact() {
   
     return (
       <section id="contact">
+      <Head>
+          <title>Contact</title>
+      </Head>
       <div className='container mt-5' id="contact">
         <form onSubmit={onSubmit} class=" d-flex flex-column contactForm">
             <input

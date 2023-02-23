@@ -1,39 +1,29 @@
-import Link from 'next/link'
+import React, {useState} from 'react';
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import {Link} from 'react-scroll';
 
 
-export default function Navbar() {
+const Navigation = () => {
+  const [expanded, setExpanded] = useState(false);
     return (
-        <>
-        <nav className="navbar mb-3">
-            <div className="container-fluid navbarStyle d-flex justify-content-evenly">
-                <div className="button type2"><Link href='/'>Home</Link></div>
-                <div className="button type2"><Link href='#experience'>Experience</Link></div>
-                <div className="button type2"><Link href='#projects'>Projects</Link></div>
-                <div className="button type2"><Link href='#contact'>Connect</Link></div>
-            </div>
-        </nav>       
-{/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-        <div className="button type2"><Link href='/'>Home</Link></div>
-        </li>
-        <li class="nav-item">
-        <div className="button type2"><Link href='/projects'>Projects</Link></div>
-        </li>
-        <li class="nav-item">
-            <div className="button type2"><Link href='/experience'>Experience</Link></div>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</nav> */}
-        </>
+      <>
+        <Navbar expand="lg" expanded={expanded}>
+        <Container>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Link to="about" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">About</Link>
+              <Link to="experience" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">Experience</Link>
+              <Link to="projects" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">Projects</Link>
+              <Link to="contact" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">Contact</Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      </>
     )
 }
+
+export default Navigation;
+
+

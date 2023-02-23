@@ -78,7 +78,7 @@ export default function About() {
 
             <div class="offcanvas offcanvas-start" tabindex="-1" id="vantage" aria-labelledby="VantageLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="VantageLabel">VANTAGE</h5>
+                    <h2 class="offcanvas-title" id="VantageLabel">VANTAGE</h2>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -97,7 +97,7 @@ export default function About() {
 
             <div class="offcanvas offcanvas-start" tabindex="-1" id="localeyz" aria-labelledby="LocaleyzLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="LocaleyzLabel">LOCALEYZ</h5>
+                    <h2 class="offcanvas-title" id="LocaleyzLabel">LOCALEYZ</h2>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">

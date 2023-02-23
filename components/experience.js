@@ -12,7 +12,7 @@ export default function Projects() {
 return (
   <section id="experience">
       <Head>
-          <title>Projects</title>
+          <title>Experience</title>
       </Head>
 
   <VerticalTimeline id="experiencesDiv">

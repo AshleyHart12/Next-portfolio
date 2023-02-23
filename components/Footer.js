@@ -9,6 +9,7 @@ export default function Footer() {
         <div className='footer-heart'>
           <Image src="/images/heart.jpg" width={15} height={15} />
         </div>
+        <p className="m-0">2023</p>
       </footer>
     </>
   )
