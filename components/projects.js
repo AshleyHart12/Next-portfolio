@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <>
+        <section id="projects">
         <Head>
             <title>Projects</title>
         </Head>
@@ -115,6 +115,6 @@ export default function About() {
             </div>
         </div>
 
-        </>
+        </section>
     )
 }

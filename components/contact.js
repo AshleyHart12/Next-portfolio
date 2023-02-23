@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { send } from 'emailjs-com';
 import Image from 'next/image'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-// import { faLinkedin } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
     const [toSend, setToSend] = useState({
@@ -33,7 +31,8 @@ function Contact() {
     };
   
     return (
-      <div className='container mt-5'>
+      <section id="contact">
+      <div className='container mt-5' id="contact">
         <form onSubmit={onSubmit} class=" d-flex flex-column contactForm">
             <input
                 type='text'
@@ -68,12 +67,16 @@ function Contact() {
             </a>
             {/* <button type='submit' id="contactBtn" class="m-3">Submit</button> */}
         </form>
+      </div>
         <div className="social_media_connect mt-3">
-          <a href="https://www.linkedin.com/in/ashley-m-hart/" target="_blank">
-            <Image src="/images/linkedin.svg" width={25} height={25} />
+          <a href="https://www.linkedin.com/in/ashley-m-hart/" target="_blank" className="linkedin-logo">
+            <Image src="/images/linkedin.svg" width={30} height={30} />
+          </a>
+          <a href="https://github.com/AshleyHart12" target="_blank">
+            <Image src="/images/square-github.svg" width={30} height={30} />
           </a>
         </div>
-      </div>
+      </section>
     );
   }
 

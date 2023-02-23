@@ -7,9 +7,9 @@ export default function Navbar() {
         <nav className="navbar mb-3">
             <div className="container-fluid navbarStyle d-flex justify-content-evenly">
                 <div className="button type2"><Link href='/'>Home</Link></div>
-                <div className="button type2"><Link href='/projects'>Projects</Link></div>
-                <div className="button type2"><Link href='/experience'>Experience</Link></div>
-                <div className="button type2"><Link href='/contact'>Connect</Link></div>
+                <div className="button type2"><Link href='#experience'>Experience</Link></div>
+                <div className="button type2"><Link href='#projects'>Projects</Link></div>
+                <div className="button type2"><Link href='#contact'>Connect</Link></div>
             </div>
         </nav>       
 {/* <nav class="navbar navbar-expand-lg navbar-light bg-light">

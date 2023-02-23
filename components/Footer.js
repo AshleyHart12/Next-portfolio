@@ -1,10 +1,14 @@
 import styles from './Footer.module.css'
+import Image from 'next/image';
 
 export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        Made with <img src="/netliheart.svg" alt="Netlify Logo" className={styles.logo} /> for you
+        <p className="m-0">Made with</p>
+        <div className='footer-heart'>
+          <Image src="/images/heart.jpg" width={15} height={15} />
+        </div>
       </footer>
     </>
   )
