@@ -1,20 +1,24 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { Storage } from 'aws-amplify';
+import { useState, useEffect } from 'react';
 // import Lampros from "/../images/lampros.gif";
 // import Vantage from "/../images/Vantage.png";
 // import Localeyz from "/../images/localeyz.gif"
 
 export default function About() {
+
     return (
         <section id="projects">
         <Head>
             <title>Projects</title>
         </Head>
         <div className="container project-container">
+            <h2 className='text-center m-5'>PROJECTS</h2>
             <div className="row mt-4">
                 <div className="col">
                     <div className="project-img img-lampros">
-                        <Image src='/images/lampros.gif' width={300} height={200} alt="gif going through website" />
+                        <Image src={'/images/lampros.gif'} width={300} height={200} alt="gif going through website" />
                     </div>
                 </div>
                 <div className="col">
@@ -44,7 +48,7 @@ export default function About() {
             <div className="row mt-4">
                 <div className="col">
                     <div className="project-img img-localeyz">
-                        <Image src='/images/localeyz.gif' width={300} height={200} alt="gif going through website" />
+                        <Image src='' width={300} height={200} alt="gif going through website" />
                     </div>
                 </div>
                 <div className="col">

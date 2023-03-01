@@ -1,9 +1,18 @@
 :root {
-  --primary-dark: rgb(82, 38, 98);
+  --primary-dark: black;
   --primary-light: rgb(254, 250, 255);
+  /* --primary-dark: #8E8D8A;
+  --primary-light: #EAE7DC;
+  --primary-yelow: #EEB34B;
+  --dark: #1A1A1A; */
+
+  --yellow-gradient: linear-gradient(0deg, rgba(235,161,60,1) 0%, rgba(244,205,111,1) 100%);
+  --turquiose: #74aec0;
+  --seafoam: #a8ecc9;
+  --yellow: #f4cd6f;
 }
 
-body[data-theme='pinky_purple_classic'] {
+/* body[data-theme='pinky_purple_classic'] {
   --primary-dark: rgb(82, 38, 98);
   --primary-light: rgb(254, 250, 255)
 }
@@ -11,7 +20,7 @@ body[data-theme='pinky_purple_classic'] {
 body[data-theme='standard_dev'] {
   --primary-dark: rgb(38, 35, 35);
   --primary-light: rgb(44, 204, 215);
-}
+} */
 
 html,
 body {
@@ -19,7 +28,7 @@ body {
   margin: 0;
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
-  background-color: var(--primary-light);
+  background-color: white;
   color: var(--primary-dark);
   height: 100%;
   transition: background 0.25s ease-in-out;
@@ -33,6 +42,10 @@ body {
   height: 100%;
 }
 
+.container, .container-fluid {
+  padding: 0px !important;
+}
+
 /* ABOUT SECTION */
 .welcome {
   font-size: 53px;
@@ -43,19 +56,30 @@ body {
 }
 
 .profile-photo {
-  border-radius: 50%;
+  filter: grayscale();
 }
 
 .light-text {
-  color: #667182;
+  color: rgb(214, 212, 212);
 }
 
 .dark-text {
-  color: var(--primary-dark);
+  color: rgb(253, 253, 253);
+  font-weight: bolder;
 }
 
 .large-text {
   font-size: 65px;
+}
+
+#about {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.home-text {
+  line-height: 2;
 }
 
 /* CONTACT FORM */
@@ -64,11 +88,15 @@ input {
   border-bottom: 1px solid black;
 }
 
+#contact {
+  margin-top: 150px;
+}
+
 .contactForm {
-  max-width: 900px;
+  max-width: 700px;
   margin: auto;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 50px 20px;
 }
 
@@ -76,7 +104,7 @@ input {
   max-width: 700px;
   margin: auto;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 15px 20px;
   display: flex;
   justify-content: center;
@@ -163,7 +191,7 @@ input:focus-visible {
   left: 0;
   width: 100%;
   z-index: 1;
-  background-color: rgba(230, 223, 233, 0.815);
+  /* background-color: rgba(230, 223, 233, 0.815); */
   box-shadow: 0px 5px 10px rgba(188, 181, 192, 0.676);
   padding: 15px;
 }
@@ -187,6 +215,7 @@ input:focus-visible {
   top: 100%;
   left: 0;
   width: 100%;
+  max-width: 75px;
   height: 2px;
   background-color: rgba(230, 223, 233, 0.815);
   transition: all 0.3s ease;
@@ -206,16 +235,29 @@ input:focus-visible {
 
 .navbar-nav {
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: right;
 }
 
 .navbar-nav > .active {
   font-weight: bold;
 }
 
+.navbar-nav * {
+  margin-right: 15px;
+}
+
 /* EXPERIENCE SECTION */
 #experiencesDiv {
   overflow: scroll;
+}
+
+.experience-section-header {
+  background-color: black;
+  color: white;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 3px 3px 3px #ddd
 }
 
 /* PROJECT PAGE */
@@ -317,5 +359,49 @@ input:focus-visible {
 
 .Footer_footer___O5Nl {
   margin-top: 20px;
+}
+
+/* PARRALAX */
+.firstImg, .secondImg, .thirdImg {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.firstImg {
+  background-image: url('../public/images/bc.jpeg');
+  min-height: 100vh;
+}
+
+.secondImg {
+  background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  min-height: 250px;
+  filter: grayscale(.8);
+}
+
+.thirdImg {
+  background-image: url('https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60');
+  height: 200px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.Typewriter__wrapper{
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  border: 3px solid white;
 }
 

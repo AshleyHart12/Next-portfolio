@@ -36,7 +36,8 @@ function Contact() {
       <Head>
           <title>Contact</title>
       </Head>
-      <div className='container mt-5' id="contact">
+      <div className='container' id="contact">
+        <h2 className="mb-4 text-center">Get In Touch</h2>
         <form onSubmit={onSubmit} class=" d-flex flex-column contactForm">
             <input
                 type='text'
@@ -72,7 +73,7 @@ function Contact() {
             {/* <button type='submit' id="contactBtn" class="m-3">Submit</button> */}
         </form>
       </div>
-        <div className="social_media_connect mt-3">
+        <div className="social_media_connect mt-3 mb-5">
           <a href="https://www.linkedin.com/in/ashley-m-hart/" target="_blank" className="linkedin-logo">
             <Image src="/images/linkedin.svg" width={30} height={30} />
           </a>

@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-// import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import computer from '../public/images/computer.jpg';
 
 export default function Projects() {
@@ -14,7 +12,7 @@ return (
       <Head>
           <title>Experience</title>
       </Head>
-
+  <h2 className='text-center p-5 experience-section-header'>EXPERIENCE</h2>
   <VerticalTimeline id="experiencesDiv">
   <VerticalTimelineElement
       className="vertical-timeline-element--work"
