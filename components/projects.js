@@ -14,7 +14,7 @@ export default function About() {
             <title>Projects</title>
         </Head>
         <div className="container project-container">
-            <h2 className='text-center m-5'>PROJECTS</h2>
+            <h2 className='text-center p-5 project-headline'>PROJECTS</h2>
             <div className="row mt-4">
                 <div className="col">
                     <div className="project-img img-lampros">
