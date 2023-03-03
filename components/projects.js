@@ -18,7 +18,7 @@ export default function About() {
             <div className="row mt-4">
                 <div className="col">
                     <div className="project-img img-lampros">
-                        <Image src={'/images/lampros.gif'} width={300} height={200} alt="gif going through website" />
+                        <Image src='/images/lampros.gif' width={300} height={200} alt="gif going through website" />
                     </div>
                 </div>
                 <div className="col">
@@ -48,7 +48,7 @@ export default function About() {
             <div className="row mt-4">
                 <div className="col">
                     <div className="project-img img-localeyz">
-                        <Image src='' width={300} height={200} alt="gif going through website" />
+                        <Image src='/images/localeyz.gif' width={300} height={200} alt="gif going through website" />
                     </div>
                 </div>
                 <div className="col">
