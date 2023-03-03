@@ -32,12 +32,12 @@ function Contact() {
     };
   
     return (
-      <section id="contact">
+      <section id="contact" >
       <Head>
           <title>Contact</title>
       </Head>
       <div className='container' id="contact">
-        <h2 className="mb-4 text-center">Get In Touch</h2>
+        <h2 className="p-5 text-center">Get In Touch</h2>
         <form onSubmit={onSubmit} class=" d-flex flex-column contactForm">
             <input
                 type='text'

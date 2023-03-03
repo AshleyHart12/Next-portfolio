@@ -90,6 +90,7 @@ input {
 
 #contact {
   margin-top: 150px;
+  background: url('https://images.unsplash.com/photo-1619252584172-a83a949b6efd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
 }
 
 .contactForm {
@@ -252,10 +253,7 @@ input:focus-visible {
 }
 
 #experience {
-  background-color: #8ca9b9;
-}
-.experience-section-header {
-  color: white;
+  background: url('https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
 }
 
 .vertical-timeline-element-content {
