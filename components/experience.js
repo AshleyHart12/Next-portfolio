@@ -16,10 +16,10 @@ return (
   <VerticalTimeline id="experiencesDiv">
   <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentArrowStyle={{ borderRight: '7px solid  rgb(82, 38, 98)' }}
+      contentArrowStyle={{ borderRight: '7px solid black' }}
       date="08/2022 - present"
       iconStyle={{ color: '#fff' }}
-      icon={<Image src={computer} width={60} height={60} />}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
     >
       <a href="https://drive.google.com/file/d/1ROyRrEUMvQY-71VVg5FEhonUmAzd38un/view?usp=sharing" target='_blank'>
       <h3 className="vertical-timeline-element-title mb-2">Frontend Developer</h3>
@@ -31,10 +31,10 @@ return (
     
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentArrowStyle={{ borderRight: '7px solid  rgb(82, 38, 98)' }}
+      contentArrowStyle={{ borderRight: '7px solid black' }}
       date="08/2021 - present"
       iconStyle={{ color: '#fff' }}
-      icon={<Image src={computer} width={60} height={60} />}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
     >
       <a href="https://drive.google.com/file/d/1ROyRrEUMvQY-71VVg5FEhonUmAzd38un/view?usp=sharing" target='_blank'>
       <h3 className="vertical-timeline-element-title mb-2">Teaching Assistant</h3>
@@ -44,10 +44,10 @@ return (
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentArrowStyle={{ borderRight: '7px solid  rgb(82, 38, 98)' }}
+      contentArrowStyle={{ borderRight: '7px solid black' }}
       date="08/2021 - 05/2022"
       iconStyle={{ color: '#fff' }}
-      icon={<Image src={computer} width={60} height={60} />}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
     >
       <a href="https://drive.google.com/file/d/1ROyRrEUMvQY-71VVg5FEhonUmAzd38un/view?usp=sharing" target='_blank'>
       <h3 className="vertical-timeline-element-title mb-2">Teacher</h3>
@@ -59,10 +59,10 @@ return (
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentArrowStyle={{ borderRight: '7px solid  rgb(82, 38, 98)' }}
+      contentArrowStyle={{ borderRight: '7px solid black' }}
       date="12/2020 - 04/2021"
       iconStyle={{  color: '#fff' }}
-      icon={<Image src={computer} width={60} height={60} />}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
     >
       <a href="https://drive.google.com/file/d/1ROyRrEUMvQY-71VVg5FEhonUmAzd38un/view?usp=sharing" target='_blank'>
       <h3 className="vertical-timeline-element-title mb-2">Frontend Engineer</h3>
@@ -72,10 +72,10 @@ return (
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--education"
-      contentArrowStyle={{ borderRight: '7px solid  rgb(82, 38, 98)' }}
+      contentArrowStyle={{ borderRight: '7px solid black' }}
       date="08/2019 - 12/2020"
       iconStyle={{  color: '#fff' }}
-      icon={<Image src={computer} width={60} height={60} />}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
     >
       <a href="https://drive.google.com/file/d/1ROyRrEUMvQY-71VVg5FEhonUmAzd38un/view?usp=sharing" target='_blank'>
       <h3 className="vertical-timeline-element-title mb-2">Junior Web Developer</h3>

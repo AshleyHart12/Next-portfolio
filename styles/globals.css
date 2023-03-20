@@ -94,7 +94,8 @@ input {
 }
 
 #contact {
-  background: url('https://images.unsplash.com/photo-1619252584172-a83a949b6efd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+  /* background: url('https://images.unsplash.com/photo-1619252584172-a83a949b6efd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'); */
+  background-color: #e9ecee;
   padding-bottom: 30px;
 }
 
@@ -257,8 +258,18 @@ input:focus-visible {
   overflow: scroll;
 }
 
+.experience-section-header {
+  color: white;
+}
+
 #experience {
-  background: url('https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+  /* background: url('https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'); */
+  background-color: #638188;
+  padding-bottom: 50px;
+}
+
+.experience-icon {
+  border-radius: 50%;
 }
 
 .vertical-timeline-element-content {
@@ -365,7 +376,7 @@ input:focus-visible {
 }
 
 #projects {
-  background-color: #9f8997;
+  background-color: #92a5ad;
 }
 
 .project-headline {
@@ -400,12 +411,13 @@ input:focus-visible {
 .secondImg, .fourthImg {
   background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
   min-height: 250px;
-  filter: grayscale(.8);
+  filter: grayscale(.3);
 }
 
 .thirdImg {
-  background-image: url('https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60');
+  background-image: url('https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
   height: 300px;
+  filter: grayscale(.3);
 }
 
 .caption {
