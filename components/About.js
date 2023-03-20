@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Profile from '../images/profile.jpg'
 
 export default function About() {
 
@@ -19,7 +20,7 @@ export default function About() {
             </div>
             <div className="col-md-4 text-center order-1 order-md-2 d-flex align-items-center about-img justify-content-center">
               <Image 
-              src="/images/profile.jpg"
+              src={Profile}
               height={600}
               width={600}
               alt="author holding a cup of tea"

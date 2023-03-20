@@ -2,9 +2,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Storage } from 'aws-amplify';
 import { useState, useEffect } from 'react';
-// import Lampros from "/../images/lampros.gif";
-// import Vantage from "/../images/Vantage.png";
-// import Localeyz from "/../images/localeyz.gif"
+import Lampros from "../images/lampros.gif";
+import Vantage from "../images/Vantage.png";
+import Localeyz from "../images/localeyz.gif"
 
 export default function About() {
 
@@ -18,7 +18,7 @@ export default function About() {
             <div className="row mt-4">
                 <div className="col">
                     <div className="project-img img-lampros">
-                        <Image src='/images/lampros.gif' width={300} height={200} alt="gif going through website" />
+                        <Image src={Lampros} width={300} height={200} alt="gif going through website" />
                     </div>
                 </div>
                 <div className="col">
@@ -33,7 +33,7 @@ export default function About() {
             <div className="row mt-4">
                 <div className="col">
                     <div className="project-img img-vantage">
-                        <Image src='/images/Vantage.png' width={300} height={200} alt="gif going through website" />
+                        <Image src={Vantage} width={300} height={200} alt="gif going through website" />
                     </div>
                 </div>
                 <div className="col">
@@ -48,7 +48,7 @@ export default function About() {
             <div className="row mt-4">
                 <div className="col">
                     <div className="project-img img-localeyz">
-                        <Image src='/images/localeyz.gif' width={300} height={200} alt="gif going through website" />
+                        <Image src={Localeyz} width={300} height={200} alt="gif going through website" />
                     </div>
                 </div>
                 <div className="col">
