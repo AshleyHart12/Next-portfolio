@@ -1,10 +1,23 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import {Link} from 'react-scroll';
 
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      let nav = document.querySelector('.navbar');
+      if(window.scrollY > 150) {
+        nav.style.backgroundColor = "white";
+        console.log('scroll')
+      } else {
+        nav.style.backgroundColorm= "none";
+      }
+    })
+  }, [])
+  
     return (
       <>
         <Navbar expand="lg" expanded={expanded}>

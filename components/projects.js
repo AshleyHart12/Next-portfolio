@@ -15,7 +15,7 @@ export default function About() {
         </Head>
         <div className="container project-container">
             <h2 className='text-center p-5 project-headline'>PROJECTS</h2>
-            <div className="row mt-4">
+            <div className="row mt-4 text-center">
                 <div className="col">
                     <div className="project-img img-lampros">
                         <Image src={Lampros} width={300} height={200} alt="gif going through website" />
@@ -30,7 +30,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="row mt-4">
+            <div className="row mt-4 text-center">
                 <div className="col">
                     <div className="project-img img-vantage">
                         <Image src={Vantage} width={300} height={200} alt="gif going through website" />
@@ -45,7 +45,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="row mt-4">
+            <div className="row mt-4 text-center">
                 <div className="col">
                     <div className="project-img img-localeyz">
                         <Image src={Localeyz} width={300} height={200} alt="gif going through website" />

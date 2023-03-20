@@ -22,13 +22,7 @@ export default function Home() {
           <Typewriter
                     onInit={(typewriter) => {
                     typewriter.typeString('ASHLEY HART')
-                        .callFunction(() => {
-                        console.log('String typed out!');
-                        })
                         .pauseFor(2500)
-                        .callFunction(() => {
-                        console.log('All strings were deleted');
-                        })
                         .start();
                     }}
                 />
@@ -40,6 +34,7 @@ export default function Home() {
         <Experience />
         <div className='thirdImg'></div>
         <Projects />
+        <div className='fourthImg'></div>
         <Contact />
         <Footer />
     </div>

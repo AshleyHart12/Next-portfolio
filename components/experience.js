@@ -3,9 +3,9 @@ import Image from 'next/image';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import computer from '../images/computer.jpg';
-import { animated } from '@react-spring/web'
+
+
 export default function Projects() {
-  console.log(computer)
   
 return (
   <section id="experience">

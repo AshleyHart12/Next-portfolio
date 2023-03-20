@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { send } from 'emailjs-com';
 import Image from 'next/image'
 import Head from 'next/head';
+import Linkedin from '../images/linkedin.svg';
+import Github from '../images/square-github.svg';
 
 function Contact() {
     const [toSend, setToSend] = useState({
@@ -75,10 +77,10 @@ function Contact() {
       </div>
         <div className="social_media_connect mt-3 mb-5">
           <a href="https://www.linkedin.com/in/ashley-m-hart/" target="_blank" className="linkedin-logo">
-            <Image src="/images/linkedin.svg" width={30} height={30} />
+            <Image src={Linkedin} width={30} height={30} />
           </a>
           <a href="https://github.com/AshleyHart12" target="_blank">
-            <Image src="/images/square-github.svg" width={30} height={30} />
+            <Image src={Github} width={30} height={30} />
           </a>
         </div>
       </section>
