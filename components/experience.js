@@ -21,10 +21,12 @@ return (
       iconStyle={{ color: '#fff' }}
       icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
     >
-      <a href="https://drive.google.com/file/d/1ROyRrEUMvQY-71VVg5FEhonUmAzd38un/view?usp=sharing" target='_blank'>
+      <div class="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' class="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Frontend Developer</h3>
       <h5 className="vertical-timeline-element-subtitle">Lampros Labs</h5>
       </a>
+      </div>
       <p>User Experience, Visual Design</p>
 
     </VerticalTimelineElement>
@@ -36,10 +38,12 @@ return (
       iconStyle={{ color: '#fff' }}
       icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
     >
-      <a href="https://drive.google.com/file/d/1ROyRrEUMvQY-71VVg5FEhonUmAzd38un/view?usp=sharing" target='_blank'>
+      <div class="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' class="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Teaching Assistant</h3>
       <h5 className="vertical-timeline-element-subtitle">EdX</h5>
       </a>
+      </div>
       <p>Full Stack Web Development Cirriculum</p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
@@ -49,10 +53,12 @@ return (
       iconStyle={{ color: '#fff' }}
       icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
     >
-      <a href="https://drive.google.com/file/d/1ROyRrEUMvQY-71VVg5FEhonUmAzd38un/view?usp=sharing" target='_blank'>
+      <div class="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' class="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Teacher</h3>
       <h5 className="vertical-timeline-element-subtitle">Webber Middle School</h5>
       </a>
+      </div>
       <p>
         Web Design and Computer Animation
       </p>
@@ -64,10 +70,12 @@ return (
       iconStyle={{  color: '#fff' }}
       icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
     >
-      <a href="https://drive.google.com/file/d/1ROyRrEUMvQY-71VVg5FEhonUmAzd38un/view?usp=sharing" target='_blank'>
+      <div class="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' class="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Frontend Engineer</h3>
       <h5 className="vertical-timeline-element-subtitle">Vantage, Ltd</h5>
       </a>
+      </div>
       <p>User Experience, Visual Design</p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
@@ -77,10 +85,12 @@ return (
       iconStyle={{  color: '#fff' }}
       icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
     >
-      <a href="https://drive.google.com/file/d/1ROyRrEUMvQY-71VVg5FEhonUmAzd38un/view?usp=sharing" target='_blank'>
+      <div class="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' class="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Junior Web Developer</h3>
       <h5 className="vertical-timeline-element-subtitle">First Turn Media</h5>
       </a>
+      </div>
       <p>Custom React site</p>
     </VerticalTimelineElement>
 
