@@ -1,6 +1,9 @@
 :root {
   --primary-dark: black;
   --primary-light: rgb(254, 250, 255);
+  --light-text: rgb(136, 133, 133);
+  --dark-text: #8E8D8A;
+  --accent: #6b638b;
   /* --primary-dark: #8E8D8A;
   --primary-light: #EAE7DC;
   --primary-yelow: #EEB34B;
@@ -65,11 +68,11 @@ body {
 }
 
 .light-text {
-  color: rgb(214, 212, 212);
+  color: rgb(136, 133, 133);
 }
 
 .dark-text {
-  color: rgb(253, 253, 253);
+  color: var(--accent);
   font-weight: bolder;
 }
 
@@ -78,9 +81,8 @@ body {
 }
 
 #about {
-  background-color: #88636b;
-  display: flex;
-  align-items: center;
+  background-color: white;
+  text-align: center;
 }
 
 .home-text {
@@ -115,6 +117,39 @@ input {
   padding: 15px 20px;
   display: flex;
   justify-content: center;
+}
+
+.contact-header {
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.contact-header h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.contact-header h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.contact-header h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--accent);
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 /* CONTACT FORM SUBMIT BUTTON ANIMATION */
@@ -259,11 +294,42 @@ input:focus-visible {
 }
 
 .experience-section-header {
-  color: black;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+
+.experience-section-header h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.experience-section-header h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.experience-section-header h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--accent);
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 #experience {
-  background-color: #82a9b83d;
+  /* background-color: #82a9b83d; */
+  background-color: white;
   padding-bottom: 50px;
 }
 
@@ -358,28 +424,16 @@ input:focus-visible {
 }
 
 .project-img {
-  margin: 10px;
-  /* float: left; */
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .project-container {
-  max-width: 800px;
+  /* max-width: 800px; */
   padding-bottom: 50px !important;
 }
-
-/* 
-.img-vantage {
-  box-shadow: inset 0 0 12px blue;
-}
-
-.img-lampros {
-  box-shadow: inset 0 0 12px green;
-}
-
-.img-localeyz {
-  box-shadow: inset 0 0 12px black;
-} */
 
 .project-tech-list {
   font-size: 12px;
@@ -398,11 +452,40 @@ input:focus-visible {
 }
 
 #projects {
-  background-color: #92a5ad;
+  background-color: white;
 }
 
 .project-headline {
-  color: white;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.project-headline h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.project-headline h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.project-headline h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--accent);
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 /* FOOTER */
@@ -414,6 +497,21 @@ input:focus-visible {
   background-color: #3d2f5a;
   color: white;
 }
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 1em;
+  margin: 5px;
+}
+
 
 /* PARRALAX */
 .firstImg, .secondImg, .thirdImg, .fourthImg {
@@ -436,11 +534,11 @@ input:focus-visible {
   filter: grayscale(.3);
 }
 
-.thirdImg {
+/* .thirdImg {
   background-image: url('https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
   height: 300px;
   filter: grayscale(.3);
-}
+} */
 
 .caption {
   position: absolute;

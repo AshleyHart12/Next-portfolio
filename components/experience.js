@@ -9,20 +9,17 @@ export default function Projects() {
   
 return (
   <section id="experience">
-      <Head>
-          <title>Experience</title>
-      </Head>
-  <h2 className='text-center p-5 experience-section-header'>EXPERIENCE</h2>
+  <div className='text-center p-5 experience-section-header'><h2>EXPERIENCE</h2></div>
   <VerticalTimeline id="experiencesDiv">
   <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentArrowStyle={{ borderRight: '7px solid black' }}
       date="08/2022 - present"
       iconStyle={{ color: '#fff' }}
-      icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" alt='computer graphic' />}
     >
-      <div class="experience-link">
-      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' class="experience-link">
+      <div className="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' className="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Frontend Developer</h3>
       <h5 className="vertical-timeline-element-subtitle">Lampros Labs</h5>
       </a>
@@ -36,10 +33,10 @@ return (
       contentArrowStyle={{ borderRight: '7px solid black' }}
       date="08/2021 - present"
       iconStyle={{ color: '#fff' }}
-      icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" alt='computer graphic' />}
     >
-      <div class="experience-link">
-      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' class="experience-link">
+      <div className="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' className="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Teaching Assistant</h3>
       <h5 className="vertical-timeline-element-subtitle">EdX</h5>
       </a>
@@ -51,10 +48,10 @@ return (
       contentArrowStyle={{ borderRight: '7px solid black' }}
       date="08/2021 - 05/2022"
       iconStyle={{ color: '#fff' }}
-      icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" alt='computer graphic' />}
     >
-      <div class="experience-link">
-      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' class="experience-link">
+      <div className="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' className="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Teacher</h3>
       <h5 className="vertical-timeline-element-subtitle">Webber Middle School</h5>
       </a>
@@ -68,10 +65,10 @@ return (
       contentArrowStyle={{ borderRight: '7px solid black' }}
       date="12/2020 - 04/2021"
       iconStyle={{  color: '#fff' }}
-      icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" alt='computer graphic' />}
     >
-      <div class="experience-link">
-      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' class="experience-link">
+      <div className="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' className="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Frontend Engineer</h3>
       <h5 className="vertical-timeline-element-subtitle">Vantage, Ltd</h5>
       </a>
@@ -83,10 +80,10 @@ return (
       contentArrowStyle={{ borderRight: '7px solid black' }}
       date="08/2019 - 12/2020"
       iconStyle={{  color: '#fff' }}
-      icon={<Image src={computer} width={40} height={40} className="experience-icon" />}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" alt='computer graphic' />}
     >
-      <div class="experience-link">
-      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' class="experience-link">
+      <div className="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' className="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Junior Web Developer</h3>
       <h5 className="vertical-timeline-element-subtitle">First Turn Media</h5>
       </a>

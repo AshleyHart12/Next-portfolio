@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { send } from 'emailjs-com';
 import Image from 'next/image'
@@ -39,8 +40,8 @@ function Contact() {
           <title>Contact</title>
       </Head>
       <div className='container' id="contact">
-        <h2 className="p-5 text-center">Get In Touch</h2>
-        <form onSubmit={onSubmit} class=" d-flex flex-column contactForm">
+        <div className="p-5 text-center contact-header"><h2>Get In Touch</h2></div>
+        <form onSubmit={onSubmit} className=" d-flex flex-column contactForm">
             <input
                 type='text'
                 name='from_name'
@@ -65,22 +66,22 @@ function Contact() {
                 onChange={handleChange}
                 className="m-3"
             />
-            <a href="#" class="cta">
+            <a href="#" className="cta">
               <span>Submit</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
             </a>
-            {/* <button type='submit' id="contactBtn" class="m-3">Submit</button> */}
+            {/* <button type='submit' id="contactBtn" className="m-3">Submit</button> */}
         </form>
       </div>
         <div className="social_media_connect mt-3 mb-5">
           <a href="https://www.linkedin.com/in/ashley-m-hart/" target="_blank" className="linkedin-logo">
-            <Image src={Linkedin} width={30} height={30} />
+            <Image src={Linkedin} width={30} height={30} alt="logo for linkedin" />
           </a>
           <a href="https://github.com/AshleyHart12" target="_blank">
-            <Image src={Github} width={30} height={30} />
+            <Image src={Github} width={30} height={30} alt='logo for github' />
           </a>
         </div>
       </section>
