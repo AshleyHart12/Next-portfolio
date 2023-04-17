@@ -20,6 +20,15 @@ const Navigation = () => {
   
     return (
       <>
+      {/* <div class="navbar">
+        <div class="circle"></div>
+        <ul class="nav-list">
+          <Link to='about' spy={true} smooth={true} duration={300}><li>Home</li></Link>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div> */}
         <Navbar expand="lg" expanded={expanded}>
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Head from 'next/head';
 import Linkedin from '../images/linkedin.svg';
 import Github from '../images/square-github.svg';
+import Resume from '../images/resume.png';
 
 function Contact() {
     const [toSend, setToSend] = useState({
@@ -82,6 +83,9 @@ function Contact() {
           </a>
           <a href="https://github.com/AshleyHart12" target="_blank">
             <Image src={Github} width={30} height={30} alt='logo for github' />
+          </a>
+          <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target="_blank">
+            <Image src={Resume} width={30} height={30} alt='logo for resume' />
           </a>
         </div>
       </section>

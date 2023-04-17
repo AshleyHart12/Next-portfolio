@@ -9,7 +9,7 @@ export default function About() {
         <Head>
             <title>About</title>
         </Head>
-          <div className="row about-section">
+          <div className="row about-section" id="about">
             <div className="col-md-2"></div>
             <div className="col-md-8 p-5">
               <div className="row text-center justify-content-center">

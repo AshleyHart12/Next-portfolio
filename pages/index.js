@@ -36,9 +36,9 @@ export default function Home() {
         <About id="about" title="About" />
         <div className='secondImg'></div>
         <Experience setPageTitle={setPageTitle} />
-        <div className='thirdImg'></div>
+        {/* <div className='thirdImg'></div> */}
         <Projects setPageTitle={setPageTitle} />
-        <div className='fourthImg'></div>
+        {/* <div className='fourthImg'></div> */}
         <Contact setPageTitle={setPageTitle} />
         {/* <Footer /> */}
     </div>

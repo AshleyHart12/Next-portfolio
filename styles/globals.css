@@ -227,7 +227,7 @@ input:focus-visible {
 }
 
 /* NAVBAR ANIMATION STYLES */
-.navbar {
+ .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -286,7 +286,67 @@ input:focus-visible {
 
 .navbar-nav * {
   margin-right: 15px;
+} 
+
+/* .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
+
+.circle {
+  width: 90px;
+  height: 90px;
+  background-color: var(--accent);
+  border-radius: 0 0 0 100%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.nav-list {
+  position: absolute;
+  top: 20px;
+  right: -100px;
+  width: 120px;
+  background-color: var(--accent);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  list-style-type: none;
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar:hover {
+  width: 200px;
+  height: 200px;
+  border-radius: 0 0 0 100%;
+}
+
+.circle:hover {
+  width: 200px;
+  height: 200px;
+  border-radius: 0 0 0 100%;
+}
+
+.circle:hover + .nav-list {
+  right: 10px;
+  opacity: 1;
+  visibility: visible;
+  border-radius: 0 0 0 100%;
+} */
+
 
 /* EXPERIENCE SECTION */
 #experiencesDiv {
@@ -295,7 +355,6 @@ input:focus-visible {
 
 .experience-section-header {
   color: var(--accent);
-  margin-bottom: 20px;
 }
 
 
@@ -377,7 +436,6 @@ input:focus-visible {
   background-color: #fff;
   background-clip: padding-box;
   outline: 0;
-  transition: transform .3s ease-in-out;
   width: 400px;
   height: 100%;
 }
@@ -387,7 +445,7 @@ input:focus-visible {
   align-items: center;
   justify-content: center;
   padding: 1rem 1rem;
-  background-color: var(--primary-dark);
+  background-color: var(--accent);
   color: white;
 }
 
@@ -432,7 +490,7 @@ input:focus-visible {
 
 .project-container {
   /* max-width: 800px; */
-  padding-bottom: 50px !important;
+  padding-bottom: 100px !important;
 }
 
 .project-tech-list {
@@ -457,7 +515,6 @@ input:focus-visible {
 
 .project-headline {
   color: var(--accent);
-  margin-bottom: 20px;
 }
 
 .project-headline h2 {
@@ -534,11 +591,11 @@ input:focus-visible {
   filter: grayscale(.3);
 }
 
-/* .thirdImg {
+.thirdImg {
   background-image: url('https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
   height: 300px;
   filter: grayscale(.3);
-} */
+}
 
 .caption {
   position: absolute;
@@ -557,4 +614,5 @@ input:focus-visible {
   letter-spacing: 10px;
   border: 3px solid white;
 }
+
 
