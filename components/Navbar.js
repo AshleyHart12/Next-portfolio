@@ -23,7 +23,7 @@ const Navigation = () => {
       {/* <div class="navbar">
         <div class="circle"></div>
         <ul class="nav-list">
-          <Link to='about' spy={true} smooth={true} duration={300}><li>Home</li></Link>
+          <a href='about' spy={true} smooth={true} duration={300}><li>Home</li></a>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
@@ -34,10 +34,10 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Link to='about' spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">About</Link>
-              <Link to="experience" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">Experience</Link>
-              <Link to="projects" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">Projects</Link>
-              <Link to="contact" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">Contact</Link>
+              <a  href="#about" onClick={() => setExpanded(false)} className="button type2">About</a>
+              <a href="#experience" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">Experience</a>
+              <a href="#projects" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">Projects</a>
+              <a href="#contact" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)} className="button type2">Contact</a>
             </Nav>
           </Navbar.Collapse>
         </Container>
