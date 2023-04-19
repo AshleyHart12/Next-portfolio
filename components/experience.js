@@ -84,6 +84,21 @@ return (
     >
       <div className="experience-link">
       <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' className="experience-link">
+      <h3 className="vertical-timeline-element-title mb-2">Instructor</h3>
+      <h5 className="vertical-timeline-element-subtitle">CodeWizards</h5>
+      </a>
+      </div>
+      <p>Instructional Staff</p>
+    </VerticalTimelineElement>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--education"
+      contentArrowStyle={{ borderRight: '7px solid black' }}
+      date="11/2019 - 12/2020"
+      iconStyle={{  color: '#fff' }}
+      icon={<Image src={computer} width={40} height={40} className="experience-icon" alt='computer graphic' />}
+    >
+      <div className="experience-link">
+      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' className="experience-link">
       <h3 className="vertical-timeline-element-title mb-2">Junior Web Developer</h3>
       <h5 className="vertical-timeline-element-subtitle">First Turn Media</h5>
       </a>

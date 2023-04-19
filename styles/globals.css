@@ -477,6 +477,11 @@ input:focus-visible {
   border: none;
 }
 
+.shadow-img {
+  object-fit: cover;
+  object-position: top;
+}
+
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
   border: none !important;
   box-shadow: none !important;

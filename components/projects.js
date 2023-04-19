@@ -4,7 +4,8 @@ import Image from 'next/image';
 // import { useState, useEffect } from 'react';
 import Lampros from "../images/lampros.gif";
 import Vantage from "../images/Vantage.png";
-import Localeyz from "../images/localeyz.gif"
+import Localeyz from "../images/localeyz.gif";
+import Shadow from '../images/shadow.png';
 
 export default function About() {
 
@@ -16,48 +17,18 @@ export default function About() {
         <div className="container project-container">
             <div className='text-center p-5 project-headline'><h2>PROJECTS</h2></div>
             <div className="row mt-4 text-center d-flex flex-row">
-                {/* <div className="col"> */}
                     <div className="project-img img-lampros col" data-bs-toggle="offcanvas" data-bs-target="#lampros" aria-controls="lampros">
                         <Image src={Lampros} width={300} height={200} alt="gif going through website" />
                     </div>
-                {/* </div> */}
-                {/* <div className="col">
-                    <p>Lampros Labs</p>
-                    <p>HTML | JAVASCRIPT | BOOTSTRAP | PHP</p>
-                    <button className="btn btn-primary project-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#lampros" aria-controls="lampros">
-                        View More
-                    </button>
-                </div> */}
-            {/* </div> */}
-
-            {/* <div className="row mt-4 text-center">
-                <div className="col"> */}
                     <div className="project-img img-vantage col" data-bs-toggle="offcanvas" data-bs-target="#vantage" aria-controls="vantage">
                         <Image src={Vantage} width={300} height={200} alt="gif going through website" />
                     </div>
-                {/* </div>
-                <div className="col">
-                    <p>Vantage Ltd.</p>
-                    <p>ANGULAR | BOOTSTRAP | APIs</p>
-                    <button className="btn btn-primary project-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#vantage" aria-controls="vantage">
-                        View More
-                    </button>
-                </div> */}
-            {/* </div> */}
-
-            {/* <div className="row mt-4 text-center">
-                <div className="col"> */}
                     <div className="project-img img-localeyz col" data-bs-toggle="offcanvas" data-bs-target="#localeyz" aria-controls="localeyz">
                         <Image src={Localeyz} width={300} height={200} alt="gif going through website" />
                     </div>
-                {/* </div>
-                <div className="col">
-                    <p>Localeyz.io</p>
-                    <p>REACT | GRAPHQL | TAILWIND | JSON</p>
-                    <button className="btn btn-primary project-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#localeyz" aria-controls="localeyz">
-                        View More
-                    </button>
-                </div> */}
+                    <div className="project-img img-shadow col" data-bs-toggle="offcanvas" data-bs-target="#shadow" aria-controls="shadow">
+                        <Image src={Shadow} width={300} height={200} alt="gif going through website" class="shadow-img" />
+                    </div>
             </div>
 
             {/* MODALS */}
@@ -114,6 +85,25 @@ export default function About() {
                     </div>
                     <div className="project-descr">
                         This role was focused on building out front-end sites using ReactJS, GraphQL, and Gatsby, as well as providing support for existing clients on the Drupal platform. I assistedwith documentation, videos, and support for existing clients on the Drupal platform, working to ensure that their needs were met and that any issues or questions were addressed quickly and effectively. This role requires a combination of programming skills, design skills, and communication abilities to create effective solutions and provide excellent support to clients.
+                    </div>
+                </div>
+            </div>
+
+            <div className="offcanvas offcanvas-start" tabIndex="-1" id="shadow" aria-labelledby="shadow">
+                <div className="offcanvas-header">
+                    <h2 className="offcanvas-title" id="shadow">Shadow Buddy</h2>
+                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div className="offcanvas-body">
+                    <div>
+                        <ul className="project-tech-list">
+                            <li>REACT</li>
+                            <li>ADOBE XD</li>
+                            <li>TAILWIND</li>
+                        </ul>
+                    </div>
+                    <div className="project-descr">
+                        This is a project created with passion and dedication, using the powerful combination of React and Tailwind. The project will be built around a carefully crafted design, which I created using Adobe XD. This project is being developed gradually, with care and consideration given to each aspect of the construction. You can check out the entire design <a href="https://xd.adobe.com/view/b9fe1da9-45f2-4499-a76d-b056ab49cf18-ecad/" target="_blank"><u>here</u></a>
                     </div>
                 </div>
             </div>
