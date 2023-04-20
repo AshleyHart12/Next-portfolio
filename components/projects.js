@@ -18,13 +18,13 @@ export default function About() {
             <div className='text-center p-5 project-headline'><h2>PROJECTS</h2></div>
             <div className="row mt-4 text-center d-flex flex-row">
                     <div className="project-img img-lampros col" data-bs-toggle="offcanvas" data-bs-target="#lampros" aria-controls="lampros">
-                        <Image src={Lampros} width={300} height={200} alt="gif going through website" />
+                        <Image src={Lampros} width={300} height={200} alt="gif going through website" unoptimized={true} />
                     </div>
                     <div className="project-img img-vantage col" data-bs-toggle="offcanvas" data-bs-target="#vantage" aria-controls="vantage">
                         <Image src={Vantage} width={300} height={200} alt="gif going through website" />
                     </div>
                     <div className="project-img img-localeyz col" data-bs-toggle="offcanvas" data-bs-target="#localeyz" aria-controls="localeyz">
-                        <Image src={Localeyz} width={300} height={200} alt="gif going through website" />
+                        <Image src={Localeyz} width={300} height={200} alt="gif going through website" unoptimized={true} />
                     </div>
                     <div className="project-img img-shadow col" data-bs-toggle="offcanvas" data-bs-target="#shadow" aria-controls="shadow">
                         <Image src={Shadow} width={300} height={200} alt="gif going through website" class="shadow-img" />

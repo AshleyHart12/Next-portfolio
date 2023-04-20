@@ -40,6 +40,7 @@ export default function Home() {
         <Projects setPageTitle={setPageTitle} />
         {/* <div className='fourthImg'></div> */}
         <Contact setPageTitle={setPageTitle} />
+        <div className='fourthImg'></div>
         {/* <Footer /> */}
     </div>
   )
