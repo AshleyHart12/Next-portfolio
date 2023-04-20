@@ -14,6 +14,17 @@ export default function About() {
         <Head>
             <title>Projects</title>
         </Head>
+        {/* <div className='waveWrapper waveAnimation'>
+            <div className='waveWrapperInner bgTop'>
+                <div className='wave waveTop'></div>
+            </div>
+            <div className='waveWrapperInner bgMiddle'>
+                <div className='wave waveMiddle'></div>
+            </div>
+            <div className='waveWrapperInner bgBottom'>
+                <div className='wave waveBottom'></div>
+            </div>
+        </div> */}
         <div className="container project-container">
             <div className='text-center p-5 project-headline'><h2>PROJECTS</h2></div>
             <div className="row mt-4 text-center d-flex flex-row">

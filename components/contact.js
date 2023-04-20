@@ -40,7 +40,9 @@ function Contact() {
       <Head>
           <title>Contact</title>
       </Head>
-      <div className='container' id="contact">
+      {/* <div class="contact-swish"></div> */}
+      <div class="clip-path-contact"></div>
+      <div>
         <div className="p-5 text-center contact-header"><h2>Get In Touch</h2></div>
         <form onSubmit={onSubmit} className=" d-flex flex-column contactForm">
             <input

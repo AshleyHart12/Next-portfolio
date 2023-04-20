@@ -10,6 +10,7 @@ export default function Projects() {
 return (
   <section id="experience">
   <div className='text-center p-5 experience-section-header'><h2>EXPERIENCE</h2></div>
+  <div class="clip-path-about"></div>
   <VerticalTimeline id="experiencesDiv">
   <VerticalTimelineElement
       className="vertical-timeline-element--work"

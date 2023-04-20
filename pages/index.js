@@ -34,13 +34,13 @@ export default function Home() {
           </div>
         </div>
         <About id="about" title="About" />
-        <div className='secondImg'></div>
+        {/* <div className='secondImg'></div> */}
         <Experience setPageTitle={setPageTitle} />
         {/* <div className='thirdImg'></div> */}
         <Projects setPageTitle={setPageTitle} />
         {/* <div className='fourthImg'></div> */}
         <Contact setPageTitle={setPageTitle} />
-        <div className='fourthImg'></div>
+        {/* <div className='fourthImg'></div> */}
         {/* <Footer /> */}
     </div>
   )
