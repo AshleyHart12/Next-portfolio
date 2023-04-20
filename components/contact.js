@@ -38,7 +38,7 @@ function Contact() {
     return (
       <section id="contact" >
       <Head>
-          <title>Contact</title>
+          {/* <title>Contact</title> */}
       </Head>
       {/* <div class="contact-swish"></div> */}
       <div class="clip-path-contact"></div>

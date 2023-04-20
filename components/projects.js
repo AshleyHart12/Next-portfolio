@@ -12,7 +12,7 @@ export default function About() {
     return (
         <section id="projects">
         <Head>
-            <title>Projects</title>
+            {/* <title>Projects</title> */}
         </Head>
         {/* <div className='waveWrapper waveAnimation'>
             <div className='waveWrapperInner bgTop'>

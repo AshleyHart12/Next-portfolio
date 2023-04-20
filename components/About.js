@@ -7,7 +7,7 @@ export default function About() {
     return (
         <section id="about">
         <Head>
-            <title>About</title>
+            {/* <title>About</title> */}
         </Head>
           {/* <div > */}
             {/* <div className="col-md-2"></div>

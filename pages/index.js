@@ -9,16 +9,15 @@ import Navbar from '@components/Navbar'
 import About from '../components/About'
 import Typewriter from 'typewriter-effect';
 
-
 export default function Home() {
-  const [pageTitle, setPageTitle] = useState('Ashley Hart Portfolio')
-  useEffect(() => {
-    document.title = pageTitle;
-  }, [pageTitle])
+  // const [pageTitle, setPageTitle] = useState('Ashley Hart Portfolio')
+  // useEffect(() => {
+  //   document.title = pageTitle;
+  // }, [pageTitle])
   return (
     <div className="container-fluid">
       <Head>
-        <title>{pageTitle}</title>
+        <title>Ashley Hart</title>
       </Head>
         <Navbar />
         <div className="firstImg">
@@ -35,11 +34,11 @@ export default function Home() {
         </div>
         <About id="about" title="About" />
         {/* <div className='secondImg'></div> */}
-        <Experience setPageTitle={setPageTitle} />
+        <Experience  />
         {/* <div className='thirdImg'></div> */}
-        <Projects setPageTitle={setPageTitle} />
+        <Projects />
         {/* <div className='fourthImg'></div> */}
-        <Contact setPageTitle={setPageTitle} />
+        <Contact  />
         {/* <div className='fourthImg'></div> */}
         {/* <Footer /> */}
     </div>
