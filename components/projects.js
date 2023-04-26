@@ -2,10 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 // import { Storage } from 'aws-amplify';
 // import { useState, useEffect } from 'react';
-import Lampros from "../images/lampros.gif";
-import Vantage from "../images/Vantage.png";
-import Localeyz from "../images/localeyz.gif";
-import Shadow from '../images/shadow.png';
+import Lampros from "../images/ocusell.png";
+import Vantage from "../images/vantageps.jpg";
+import Localeyz from "../images/local.png";
+import Shadow from '../images/shadowbud.png';
 
 export default function About() {
 
@@ -27,18 +27,18 @@ export default function About() {
         </div> */}
         <div className="container project-container">
             <div className='text-center p-5 project-headline'><h2>PROJECTS</h2></div>
-            <div className="row mt-4 text-center d-flex flex-row">
-                    <div className="project-img img-lampros col" data-bs-toggle="offcanvas" data-bs-target="#lampros" aria-controls="lampros">
-                        <Image src={Lampros} width={300} height={200} alt="gif going through website" unoptimized={true} />
+            <div className="row mt-4 text-center d-flex flex-row justify-content-center">
+                    <div className="project-img img-lampros col-md-4" data-bs-toggle="offcanvas" data-bs-target="#lampros" aria-controls="lampros">
+                        <Image src={Lampros} width={375} height={230} alt="gif going through website" unoptimized={true} class="projectImage" />
                     </div>
-                    <div className="project-img img-vantage col" data-bs-toggle="offcanvas" data-bs-target="#vantage" aria-controls="vantage">
-                        <Image src={Vantage} width={300} height={200} alt="gif going through website" />
+                    <div className="project-img img-vantage col-md-4" data-bs-toggle="offcanvas" data-bs-target="#vantage" aria-controls="vantage">
+                        <Image src={Vantage} width={375} height={230} alt="gif going through website" class="projectImage" />
                     </div>
-                    <div className="project-img img-localeyz col" data-bs-toggle="offcanvas" data-bs-target="#localeyz" aria-controls="localeyz">
-                        <Image src={Localeyz} width={300} height={200} alt="gif going through website" unoptimized={true} />
+                    <div className="project-img img-localeyz col-md-4" data-bs-toggle="offcanvas" data-bs-target="#localeyz" aria-controls="localeyz">
+                        <Image src={Localeyz} width={375} height={230} alt="gif going through website" unoptimized={true} class="projectImage" />
                     </div>
-                    <div className="project-img img-shadow col" data-bs-toggle="offcanvas" data-bs-target="#shadow" aria-controls="shadow">
-                        <Image src={Shadow} width={300} height={200} alt="gif going through website" class="shadow-img" />
+                    <div className="project-img img-shadow col-md-4" data-bs-toggle="offcanvas" data-bs-target="#shadow" aria-controls="shadow">
+                        <Image src={Shadow} width={375} height={230} alt="gif going through website" class="projectImage shadow-img" />
                     </div>
             </div>
 

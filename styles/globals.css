@@ -540,14 +540,15 @@ input:focus-visible {
 }
 
 .project-img {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 50%;
   cursor: pointer;
 }
 
+.projectImage {
+  width: 100%;
+  object-fit: contain;
+}
+
 .project-container {
-  /* max-width: 800px; */
   padding-bottom: 100px !important;
 }
 
