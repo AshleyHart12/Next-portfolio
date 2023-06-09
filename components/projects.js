@@ -6,6 +6,7 @@ import Lampros from "../images/ocusell.png";
 import Vantage from "../images/vantageps.jpg";
 import Localeyz from "../images/local.png";
 import Shadow from '../images/shadowbud.png';
+import Loslens from '../images/loslens.png';
 
 export default function About() {
 
@@ -39,6 +40,9 @@ export default function About() {
                     </div>
                     <div className="project-img img-shadow col-md-4" data-bs-toggle="offcanvas" data-bs-target="#shadow" aria-controls="shadow">
                         <Image src={Shadow} width={375} height={230} alt="gif going through website" class="projectImage shadow-img" />
+                    </div>
+                    <div className="project-img img-los col-md-4" data-bs-toggle="offcanvas" data-bs-target="#loslens" aria-controls="shadow">
+                        <Image src={Loslens} width={375} height={230} alt="gif going through website" class="projectImage shadow-img" />
                     </div>
             </div>
 
@@ -119,6 +123,24 @@ export default function About() {
                 </div>
             </div>
         </div>
+
+        <div className="offcanvas offcanvas-start" tabIndex="-1" id="loslens" aria-labelledby="los">
+                <div className="offcanvas-header">
+                    <h2 className="offcanvas-title" id="loslens">Lo's Lens</h2>
+                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div className="offcanvas-body">
+                    <div>
+                        <ul className="project-tech-list">
+                            <li>WORDPRESS</li>
+                        </ul>
+                    </div>
+                    <div className="project-descr">
+                        For this project I built a captivating Wordpress website for a talented dog photographer, loslens.com. I began by selecting an appropriate theme that reflected the brand's aesthetics. To showcase the stunning photographs, I created an immersive image gallery, ensuring that each picture would leave a lasting impression on visitors. I integrated a user-friendly contact page, allowing potential clients to easily get in touch. Throughout the process, I collaborated closely with the client, guiding them through the intricacies of the site and empowering them to make future updates and adjustments with confidence. The end result is a visually captivating and functional website that beautifully captures the essence of the client's dog photography business You can check out the site <a href="www.loslens.com" target="_blank"><u>here</u></a>
+                    </div>
+                </div>
+            </div>
+
 
         </section>
     )
