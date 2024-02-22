@@ -17,14 +17,14 @@ export default function Home() {
   return (
     <div className="container-fluid">
       <Head>
-        <title>Ashley Hart</title>
+        <title>Ashley Judah</title>
       </Head>
         <Navbar />
         <div className="firstImg">
           <div className='caption'>
           <Typewriter
                     onInit={(typewriter) => {
-                    typewriter.typeString('ASHLEY HART')
+                    typewriter.typeString('ASHLEY JUDAH')
                         .pauseFor(2500)
                         .start();
                     }}

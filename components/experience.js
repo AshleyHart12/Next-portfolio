@@ -13,26 +13,41 @@ return (
   <div class="clip-path-about"></div>
   <VerticalTimeline id="experiencesDiv">
   <VerticalTimelineElement
-      className="vertical-timeline-element--work"
-      contentArrowStyle={{ borderRight: '7px solid black' }}
-      date="08/2022 - present"
-      iconStyle={{ color: '#fff' }}
-      icon={<Image src={computer} width={40} height={40} className="experience-icon" alt='computer graphic' />}
-    >
-      <div className="experience-link">
-      <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' className="experience-link">
-      <h3 className="vertical-timeline-element-title mb-2">Frontend Developer</h3>
-      <h5 className="vertical-timeline-element-subtitle">Lampros Labs</h5>
-      </a>
-      </div>
-      <p>User Experience, Visual Design</p>
+    className="vertical-timeline-element--work"
+    contentArrowStyle={{ borderRight: '7px solid black' }}
+    date="10/2023 - present"
+    iconStyle={{ color: '#fff' }}
+    icon={<Image src={computer} width={40} height={40} className="experience-icon" alt='computer graphic' />}
+  >
+    <div className="experience-link">
+    <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' className="experience-link">
+    <h3 className="vertical-timeline-element-title mb-2">Web Developer</h3>
+    <h5 className="vertical-timeline-element-subtitle">CommerceTools, Inc</h5>
+    </a>
+    </div>
+    <p>Systems, Web Development</p>
+  </VerticalTimelineElement>
 
-    </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentArrowStyle={{ borderRight: '7px solid black' }}
+    date="08/2022 - 09/2023"
+    iconStyle={{ color: '#fff' }}
+    icon={<Image src={computer} width={40} height={40} className="experience-icon" alt='computer graphic' />}
+  >
+    <div className="experience-link">
+    <a href="https://docs.google.com/document/d/1WFSjgsH9kyKmPK_GQXvxYw8akqwelAJS/edit?usp=sharing&ouid=107735448081503818430&rtpof=true&sd=true" target='_blank' className="experience-link">
+    <h3 className="vertical-timeline-element-title mb-2">Frontend Developer</h3>
+    <h5 className="vertical-timeline-element-subtitle">Lampros Labs</h5>
+    </a>
+    </div>
+    <p>User Experience, Web Development</p>
+  </VerticalTimelineElement>
     
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentArrowStyle={{ borderRight: '7px solid black' }}
-      date="08/2021 - present"
+      date="08/2021 - 10/2023"
       iconStyle={{ color: '#fff' }}
       icon={<Image src={computer} width={40} height={40} className="experience-icon" alt='computer graphic' />}
     >
@@ -44,6 +59,7 @@ return (
       </div>
       <p>Full Stack Web Development Cirriculum</p>
     </VerticalTimelineElement>
+
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentArrowStyle={{ borderRight: '7px solid black' }}
@@ -61,6 +77,7 @@ return (
         Web Design and Computer Animation
       </p>
     </VerticalTimelineElement>
+
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentArrowStyle={{ borderRight: '7px solid black' }}
@@ -76,6 +93,7 @@ return (
       </div>
       <p>User Experience, Visual Design</p>
     </VerticalTimelineElement>
+
     <VerticalTimelineElement
       className="vertical-timeline-element--education"
       contentArrowStyle={{ borderRight: '7px solid black' }}
@@ -91,6 +109,7 @@ return (
       </div>
       <p>Instructional Staff</p>
     </VerticalTimelineElement>
+
     <VerticalTimelineElement
       className="vertical-timeline-element--education"
       contentArrowStyle={{ borderRight: '7px solid black' }}
