@@ -2,9 +2,9 @@ import {useState, useEffect} from 'react';
 import Head from 'next/head'
 // import Footer from '@components/Footer'
 // import Image from 'next/image'
-import Contact from '../components/contact'
-import Experience from '../components/experience'
-import Projects from '../components/projects'
+import Contact from '../components/Contact'
+import Experience from '../components/Experience'
+import Projects from '../components/Projects'
 import Navbar from '@components/Navbar'
 import About from '../components/About'
 import Typewriter from 'typewriter-effect';

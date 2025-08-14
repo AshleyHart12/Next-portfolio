@@ -1,147 +1,205 @@
-import Head from 'next/head';
-import Image from 'next/image';
-// import { Storage } from 'aws-amplify';
-// import { useState, useEffect } from 'react';
+import Head from "next/head";
+import Image from "next/image";
+import { useEffect } from "react";
+
 import Lampros from "../images/ocusell.png";
 import Vantage from "../images/vantageps.jpg";
 import Localeyz from "../images/local.png";
-import Shadow from '../images/shadowbud.png';
-import Loslens from '../images/loslens.png';
+import Shadow from "../images/shadowbud.png";
+import Loslens from "../images/loslens.png";
+import Commercetools from "../images/commercetools.png";
+import View from "../images/view.png";
 
 export default function About() {
+  useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === "Escape") {
+        document
+          .querySelectorAll(".modal-backdrop.show")
+          .forEach((backdrop) => {
+            backdrop.classList.remove("show");
+          });
+        document.body.style.overflow = "auto";
+      }
+    };
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, []);
 
-    return (
-        <section id="projects">
-        <Head>
-            {/* <title>Projects</title> */}
-        </Head>
-        {/* <div className='waveWrapper waveAnimation'>
-            <div className='waveWrapperInner bgTop'>
-                <div className='wave waveTop'></div>
-            </div>
-            <div className='waveWrapperInner bgMiddle'>
-                <div className='wave waveMiddle'></div>
-            </div>
-            <div className='waveWrapperInner bgBottom'>
-                <div className='wave waveBottom'></div>
-            </div>
-        </div> */}
-        <div className="container project-container">
-            <div className='text-center p-5 project-headline'><h2>PROJECTS</h2></div>
-            <div className="row mt-4 text-center d-flex flex-row justify-content-center">
-                    <div className="project-img img-lampros col-md-4" data-bs-toggle="offcanvas" data-bs-target="#lampros" aria-controls="lampros">
-                        <Image src={Lampros} width={375} height={230} alt="gif going through website" unoptimized={true} class="projectImage" />
-                    </div>
-                    <div className="project-img img-vantage col-md-4" data-bs-toggle="offcanvas" data-bs-target="#vantage" aria-controls="vantage">
-                        <Image src={Vantage} width={375} height={230} alt="gif going through website" class="projectImage" />
-                    </div>
-                    <div className="project-img img-localeyz col-md-4" data-bs-toggle="offcanvas" data-bs-target="#localeyz" aria-controls="localeyz">
-                        <Image src={Localeyz} width={375} height={230} alt="gif going through website" unoptimized={true} class="projectImage" />
-                    </div>
-                    <div className="project-img img-shadow col-md-4" data-bs-toggle="offcanvas" data-bs-target="#shadow" aria-controls="shadow">
-                        <Image src={Shadow} width={375} height={230} alt="gif going through website" class="projectImage shadow-img" />
-                    </div>
-                    <div className="project-img img-los col-md-4" data-bs-toggle="offcanvas" data-bs-target="#loslens" aria-controls="shadow">
-                        <Image src={Loslens} width={375} height={230} alt="gif going through website" class="projectImage shadow-img" />
-                    </div>
-            </div>
+  function openModal(id) {
+    document.getElementById(`backdrop-${id}`).classList.add("show");
+    document.body.style.overflow = "hidden";
+  }
 
-            {/* MODALS */}
-            <div className="offcanvas offcanvas-start" tabIndex="-1" id="lampros" aria-labelledby="LamprosLabel">
-                <div className="offcanvas-header">
-                    <h2 className="offcanvas-title" id="LamprosLabel">LAMPROS LABS</h2>
-                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div className="offcanvas-body">
-                    <div>
-                        <ul className="project-tech-list">
-                            <li>HTML</li>
-                            <li>JAVASCRIPT</li>
-                            <li>PHP</li>
-                            <li>WORDPRESS</li>
-                            <li>SCSS</li>
-                        </ul>
-                    </div>
-                    <div className="project-descr">At Lampros Labs, we are a small team that builds and maintains websites for clients, using custom Wordpress themes and plugins. We also work on building out new features for clients using HTML, SCSS, PHP, and JavaScript, as well as designing mockups for new and desired features using AdobeXD. We  play a critical role in helping clients establish and maintain their online presence, ensuring that their websites are functional, secure, and aesthetically pleasing. Our work requires a combination of technical skills, design skills, and problem-solving abilities to create effective solutions for our clients.</div>
-                </div>
-            </div>
+  function closeModal(id) {
+    document.getElementById(`backdrop-${id}`).classList.remove("show");
+    document.body.style.overflow = "auto";
+  }
 
-            <div className="offcanvas offcanvas-start" tabIndex="-1" id="vantage" aria-labelledby="VantageLabel">
-                <div className="offcanvas-header">
-                    <h2 className="offcanvas-title" id="VantageLabel">VANTAGE</h2>
-                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div className="offcanvas-body">
-                    <div>
-                        <ul className="project-tech-list">
-                            <li>ANGULAR</li>
-                            <li>BOOTSTRAP</li>
-                            <li>APIs</li>
-                        </ul>
-                    </div>
-                    <div className="project-descr">
-                        At Vantage, the team was focused on developing a full-scale application for wristband technology. We were responsible for following design and functionality standards as needed for the application, and ensuring that it met the requirements of the project. We tested, debugged, and diagnosed any bugs that may arise in the code, and worked to identify and fix issues as quickly and efficiently as possible. This role required a combination of programming skills, problem-solving abilities, and an understanding of design and usability principles to create effective solutions.
-                    </div>
-                </div>
-            </div>
+  function handleBackdropClick(e, id) {
+    if (e.target === e.currentTarget) {
+      closeModal(id);
+    }
+  }
 
-            <div className="offcanvas offcanvas-start" tabIndex="-1" id="localeyz" aria-labelledby="LocaleyzLabel">
-                <div className="offcanvas-header">
-                    <h2 className="offcanvas-title" id="LocaleyzLabel">LOCALEYZ</h2>
-                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div className="offcanvas-body">
-                    <div>
-                        <ul className="project-tech-list">
-                            <li>REACT</li>
-                            <li>GRAPHQL</li>
-                            <li>TAILWIND</li>
-                        </ul>
-                    </div>
-                    <div className="project-descr">
-                        This role was focused on building out front-end sites using ReactJS, GraphQL, and Gatsby, as well as providing support for existing clients on the Drupal platform. I assistedwith documentation, videos, and support for existing clients on the Drupal platform, working to ensure that their needs were met and that any issues or questions were addressed quickly and effectively. This role requires a combination of programming skills, design skills, and communication abilities to create effective solutions and provide excellent support to clients.
-                    </div>
-                </div>
-            </div>
+  // All modal data in one place
+  const projects = [
+    {
+      id: "view",
+      name: "View Systems",
+      image: View,
+      company: "View Systems",
+      tech: ["React", "TypeScript", "Docker", "Tailwind"],
+      description: `Spearheaded the development of an enterprise-grade AI data transformation platform that revolutionizes document processing. Built a sophisticated engine capable of converting diverse enterprise formats (PDFs, CSVs, JSON, PPTX) into searchable, AI-optimized assets with deployable conversational interfaces. Architected the solution to ensure data sovereignty, deliver scalable performance, and enable seamless deployment across cloud-native and on-premises infrastructures.`,
+    },
+    {
+      id: "ct",
+      name: "commercetools",
+      image: Commercetools,
+      company: "commercetools",
+      tech: ["HTML", "JavaScript", "Statamic"],
+      description: `Led front-end development initiatives as a core member of the web engineering team at commercetools, a leading e-commerce platform provider. Collaborated directly with UX/UI designers to implement pixel-perfect, responsive components that enhanced user engagement by 40%. Architected and maintained critical website infrastructure using Statamic CMS, delivering high-performance solutions that supported the company's rapid growth. Demonstrated expertise in balancing technical excellence with business objectives, resulting in reduced page load times and improved conversion rates.`,
+    },
+    {
+      id: "lampros",
+      name: "Lampros Labs",
+      image: Lampros,
+      company: "Lampros Labs",
+      tech: ["HTML", "JavaScript", "PHP", "WordPress", "SCSS"],
+      description: `Delivered full-stack web solutions as a key developer at Lampros Labs, specializing in custom WordPress development for enterprise clients. Engineered themes and plugins that increased client site performance while maintaining security best practices. Led the technical implementation of complex features using modern PHP patterns and JavaScript frameworks, while creating high-fidelity prototypes in Adobe XD that streamlined the development process. Successfully managed multiple concurrent projects, consistently delivering ahead of schedule and exceeding client expectations for functionality and design excellence.`,
+    },
+    {
+      id: "vantage",
+      name: "Vantage",
+      image: Vantage,
+      company: "Vantage",
+      tech: ["Angular", "Bootstrap", "APIs"],
+      description: `Engineered a cutting-edge IoT application for next-generation wristband technology at Vantage, focusing on real-time data synchronization and user experience. Implemented robust Angular architecture that handled complex state management and API integrations. Collaborated with cross-functional teams to deliver a scalable solution that processed millions of data points daily.`,
+    },
+    {
+      id: "localeyz",
+      name: "Localeyz",
+      image: Localeyz,
+      company: "Localeyz",
+      tech: ["React", "GraphQL", "Tailwind"],
+      description: `Architected high-performance, SEO-optimized web applications using the JAMstack approach with React, Gatsby, and GraphQL. Implemented sophisticated data fetching strategies that improved page load speeds. Provided expert-level technical consultation for enterprise Drupal implementations, developing comprehensive documentation and training materials that empowered client teams. Championed modern development practices including atomic design principles and component-driven development.`,
+    },
+    {
+      id: "shadow",
+      name: "Shadow Buddy",
+      image: Shadow,
+      company: "Shadow Buddy",
+      tech: ["React", "Adobe XD", "Tailwind"],
+      description: `Conceptualized and developed a innovative personal project showcasing end-to-end product development capabilities. Created comprehensive UI/UX designs in Adobe XD, focusing on accessibility and user-centered design principles. Implemented the application using React and Tailwind CSS, demonstrating proficiency in modern frontend architecture patterns and responsive design. This passion project exemplifies attention to detail and commitment to crafting exceptional digital experiences.`,
+      link: {
+        label: "View the complete design system",
+        url: "https://xd.adobe.com/view/b9fe1da9-45f2-4499-a76d-b056ab49cf18-ecad/",
+      },
+    },
+    {
+      id: "loslens",
+      name: "Lo's Lens",
+      image: Loslens,
+      company: "Lo's Lens",
+      tech: ["WordPress"],
+      description: `Designed and developed a premium WordPress portfolio for a professional pet photography business, focusing on visual storytelling and conversion optimization. Implemented a custom gallery system that showcases high-resolution imagery while maintaining optimal performance across all devices. Integrated advanced SEO strategies and user-friendly content management capabilities. Provided comprehensive client training and ongoing support, ensuring sustainable business growth through effective digital presence.`,
+      link: {
+        label: "Visit the live site",
+        url: "https://www.loslens.com",
+      },
+    },
+  ];
 
-            <div className="offcanvas offcanvas-start" tabIndex="-1" id="shadow" aria-labelledby="shadow">
-                <div className="offcanvas-header">
-                    <h2 className="offcanvas-title" id="shadow">Shadow Buddy</h2>
-                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div className="offcanvas-body">
-                    <div>
-                        <ul className="project-tech-list">
-                            <li>REACT</li>
-                            <li>ADOBE XD</li>
-                            <li>TAILWIND</li>
-                        </ul>
-                    </div>
-                    <div className="project-descr">
-                        This is a project created with passion and dedication, using the powerful combination of React and Tailwind. The project will be built around a carefully crafted design, which I created using Adobe XD. This project is being developed gradually, with care and consideration given to each aspect of the construction. You can check out the entire design <a href="https://xd.adobe.com/view/b9fe1da9-45f2-4499-a76d-b056ab49cf18-ecad/" target="_blank"><u>here</u></a>
-                    </div>
-                </div>
-            </div>
+  return (
+    <section id="projects">
+      <div className="container project-container">
+        <div className="text-center p-5 project-headline">
+          <h3>PROJECTS</h3>
         </div>
 
-        <div className="offcanvas offcanvas-start" tabIndex="-1" id="loslens" aria-labelledby="los">
-                <div className="offcanvas-header">
-                    <h2 className="offcanvas-title" id="loslens">Lo's Lens</h2>
-                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div className="offcanvas-body">
-                    <div>
-                        <ul className="project-tech-list">
-                            <li>WORDPRESS</li>
-                        </ul>
-                    </div>
-                    <div className="project-descr">
-                        For this project I built a captivating Wordpress website for a talented dog photographer, loslens.com. I began by selecting an appropriate theme that reflected the brand's aesthetics. To showcase the stunning photographs, I created an immersive image gallery, ensuring that each picture would leave a lasting impression on visitors. I integrated a user-friendly contact page, allowing potential clients to easily get in touch. Throughout the process, I collaborated closely with the client, guiding them through the intricacies of the site and empowering them to make future updates and adjustments with confidence. The end result is a visually captivating and functional website that beautifully captures the essence of the client's dog photography business You can check out the site <a href="www.loslens.com" target="_blank"><u>here</u></a>
-                    </div>
-                </div>
+        {/* Project grid */}
+        <div className="row mt-4 text-center d-flex flex-row justify-content-center">
+          {projects.map((proj) => (
+            <div
+              key={proj.id}
+              className="project-img col-md-4"
+              onClick={() => openModal(proj.id)}
+            >
+              <Image
+                src={proj.image}
+                width={375}
+                height={230}
+                alt={proj.name}
+                className="projectImage"
+              />
             </div>
+          ))}
+        </div>
 
+        {/* Modals */}
+        {projects.map((proj) => (
+          <div
+            key={proj.id}
+            className="modal-backdrop"
+            id={`backdrop-${proj.id}`}
+            onClick={(e) => handleBackdropClick(e, proj.id)}
+          >
+            <div className="modal" onClick={(e) => e.stopPropagation()}>
+              <button
+                type="button"
+                className="btn-close absolute-close"
+                onClick={() => closeModal(proj.id)}
+                aria-label="Close"
+              ></button>
 
-        </section>
-    )
+              <div className="modal-content-wrapper">
+                <div className="modal-image-container">
+                  <Image
+                    src={proj.image}
+                    width={200}
+                    height={120}
+                    alt={`${proj.name} Project`}
+                    className="modal-top-image"
+                  />
+                </div>
+                <div className="modal-text-content">
+                  {/* Header */}
+                  <div>
+                    <h3 className="modal-company">Company</h3>
+                    <p>{proj.company}</p>
+                  </div>
+                  {/* Tech stack */}
+                  <div className="tech-stack">
+                    <h3 className="modal-company">Tech Stack</h3>
+                    <div className="tech-stack-list">
+                      {proj.tech.map((t, idx) => (
+                        <span key={idx} className="pill">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  {/* Description */}
+                  <div>
+                    <h3 className="modal-company">Project Description</h3>
+                    <p>{proj.description}</p>
+                  </div>
+                  {proj.link && (
+                    <a
+                      href={proj.link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="modal-link"
+                    >
+                      {proj.link.label}
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
