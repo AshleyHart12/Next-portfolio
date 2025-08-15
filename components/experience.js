@@ -18,7 +18,7 @@ export default function Projects() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentArrowStyle={{ borderRight: "7px solid black" }}
-          date="09/2024 - present"
+          date="09/2024 - 08/2025"
           iconStyle={{ color: "#fff" }}
           icon={
             <Image
